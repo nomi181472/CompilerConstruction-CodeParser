@@ -1,0 +1,32 @@
+﻿{
+  "function": "search",
+  "returntype": "int",
+  "parameters": [
+    {
+      "parameter": "n",
+      "type": "int"
+    },
+    {
+      "parameter": "arr",
+      "type": "int"
+    },
+    {
+      "parameter": "v",
+      "type": "int"
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "n < 0",
+      "action": "false"
+    },
+    {
+      "condition":"arr[n]==v&&n>=0",
+      "action": "1"
+    },
+    {
+      "condition": "arr[n]!=v &&n>=0",
+      "action": "search(n-1,arr,v)"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "function": "factorial",
+  "returntype": "int",
+  "parameters": [
+    {
+      "parameter": "n",
+      "type": "int"
+
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "n <= 0",
+      "action": "1"
+    },
+
+    {
+      "condition": "",
+      "action": "n * factorial(n - 1)"
+    }
+  ]}

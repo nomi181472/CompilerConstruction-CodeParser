@@ -1,0 +1,24 @@
+{
+   "function": "fib",
+  "returntype": "int",
+  "parameters": [
+    {
+      "parameter": "n",
+      "type": "int"
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "n == 0",
+      "action": "0"
+    },
+    {
+      "condition": "n == 1",
+      "action": "1"
+    },
+    {
+      "condition": "n >= 2",
+      "action": "fib(n-1)+fib(n-2)"
+    }
+  ]
+}
